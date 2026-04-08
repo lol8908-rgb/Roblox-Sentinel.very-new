@@ -57,8 +57,15 @@ Roblox Sentinel monitors your local Roblox logs in real-time and automatically f
 - **Python 3.7+** — [Download here](https://www.python.org/)
 - **Roblox** — The game should be running
 
-### Installation
+### ⚡ Super Easy Installation (Windows)
 
+**Method 1: One-Click Start** ⭐ (Easiest!)
+1. Download the repository as ZIP
+2. Extract it
+3. **Double-click `setup.bat`** ← Installs everything automatically!
+4. **Double-click `start.bat`** ← Launches the app!
+
+**Method 2: Manual Installation**
 1. **Clone or download this repository**
    ```bash
    git clone https://github.com/yourusername/Roblox-Sentinel.git
@@ -97,6 +104,22 @@ Roblox Sentinel monitors your local Roblox logs in real-time and automatically f
    ```bash
    python sentinel.py
    ```
+   
+   **OR** just double-click `start.bat`!
+
+---
+
+## 🎁 Optional: Build Standalone .exe
+
+Want a single `.exe` file without needing Python installed?
+
+See [BUILD_EXE.md](BUILD_EXE.md) for detailed instructions.
+
+Quick command:
+```bash
+pip install pyinstaller
+pyinstaller --onefile sentinel.py
+```
 
 ---
 
