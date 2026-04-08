@@ -38,14 +38,28 @@ Roblox Sentinel monitors your local Roblox logs in real-time and automatically f
    pip install -r requirements.txt
    ```
 
-3. **Configure Discord Webhook (Optional)**
-   - Open `sentinel.py` in a text editor
-   - Find this line:
-     ```python
-     DISCORD_WEBHOOK_URL = "YOUR_WEBHOOK_HERE"
-     ```
-   - Replace `"YOUR_WEBHOOK_HERE"` with your Discord Webhook URL
-   - [How to create a Discord Webhook](https://support.discord.com/hc/en-us/articles/228383668)
+3. **Configure Discord Webhook (Optional & Secure)**
+   
+   ⚠️ **SECURITY WARNING**: Never hardcode your Webhook URL in the code!
+   
+   Instead, use environment variables:
+   
+   **On Windows (CMD):**
+   ```bash
+   set DISCORD_WEBHOOK=https://discord.com/api/webhooks/YOUR_ID/YOUR_TOKEN
+   ```
+   
+   **On Windows (PowerShell):**
+   ```powershell
+   $env:DISCORD_WEBHOOK="https://discord.com/api/webhooks/YOUR_ID/YOUR_TOKEN"
+   ```
+   
+   **On Mac/Linux:**
+   ```bash
+   export DISCORD_WEBHOOK="https://discord.com/api/webhooks/YOUR_ID/YOUR_TOKEN"
+   ```
+   
+   [How to create a Discord Webhook](https://support.discord.com/hc/en-us/articles/228383668)
 
 4. **Run the script**
    ```bash

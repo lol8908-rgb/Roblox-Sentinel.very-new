@@ -21,7 +21,10 @@ except ImportError:
     sys.exit(1)
 
 # --- CONFIGURATION ---
-DISCORD_WEBHOOK_URL = "YOUR_WEBHOOK_HERE"  # Replace with your Discord Webhook URL
+# SECURITY: Never hardcode webhooks! Use environment variables instead:
+# On Windows: set DISCORD_WEBHOOK=your_webhook_url
+# On Mac/Linux: export DISCORD_WEBHOOK="your_webhook_url"
+DISCORD_WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK', "YOUR_WEBHOOK_HERE")
 LOG_PATH_PATTERN = os.path.join(
     os.environ.get('LOCALAPPDATA', os.path.expanduser('~')),
     "Roblox",
