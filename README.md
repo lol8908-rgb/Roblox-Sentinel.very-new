@@ -2,19 +2,51 @@
 
 > A lightweight, Python-based real-time chat monitor for Roblox with Discord Webhook integration.
 
+[![GitHub Stars](https://img.shields.io/github/stars/lol8908-rgb/Roblox-Sentinel.very-new?style=flat-square)](https://github.com/lol8908-rgb/Roblox-Sentinel.very-new)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+[![Python 3.7+](https://img.shields.io/badge/Python-3.7+-blue?style=flat-square)](https://www.python.org/)
+[![Status: Active](https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square)]()
+
+---
+
+## 📥 Quick Download
+
+| Platform | Download |
+|----------|----------|
+| 💻 **Windows** | [Clone or Download ZIP](https://github.com/lol8908-rgb/Roblox-Sentinel.very-new/archive/refs/heads/main.zip) |
+| 🐧 **Linux/Mac** | [Clone Repo](https://github.com/lol8908-rgb/Roblox-Sentinel.very-new.git) |
+| 👨‍💻 **Developers** | `git clone https://github.com/lol8908-rgb/Roblox-Sentinel.very-new.git` |
+
+**Latest Version:** `v1.5.0` ([View Changelog](CHANGELOG.md))
+
+---
+
 Roblox Sentinel monitors your local Roblox logs in real-time and automatically forwards chat messages to a Discord channel. It's **100% ban-safe** as it only reads local log files and never injects code or touches game memory.
 
 ---
 
 ## ✨ Features
 
-- ✅ **Real-time Monitoring** — See chat messages instantly in your console
+### 🎮 Core Features
+- ✅ **Real-time Monitoring** — See chat messages instantly in your console with zero lag
 - ✅ **Discord Integration** — Automatically send chat logs to Discord via Webhooks
 - ✅ **100% Ban-Safe** — Only reads local log files, no injection or memory tampering
 - ✅ **Automatic Detection** — Finds the latest Roblox session logs automatically
-- ✅ **Robust Error Handling** — Gracefully handles connection issues and missing data
-- ✅ **Lightweight** — Minimal CPU and RAM usage
 - ✅ **Cross-Session Support** — Automatically switches between multiple Roblox sessions
+
+### 🛠️ Technical Features
+- ✅ **Robust Error Handling** — Gracefully handles connection issues and missing data
+- ✅ **Retry Logic** — 3 automatic attempts for Discord webhook failures
+- ✅ **Network Timeouts** — 5-second timeout to prevent hanging
+- ✅ **Environment Variables** — Secure credential management (no hardcoded secrets)
+- ✅ **Lightweight** — Minimal CPU and RAM usage, ~5MB memory footprint
+- ✅ **Cross-Platform** — Windows, Mac, and Linux compatible
+
+### 🔒 Security Features
+- ✅ **No Code Injection** — Pure read-only log monitoring
+- ✅ **No Memory Access** — Doesn't touch Roblox process memory
+- ✅ **Secure Config** — Uses environment variables instead of hardcoded credentials
+- ✅ **Git-Safe** — Includes `.gitignore` to prevent credential leaks
 
 ---
 
@@ -180,18 +212,54 @@ This tool is **100% ban-safe** because:
 
 ## 📝 License
 
-This project is open source. Feel free to fork, modify, and share.
+This project is licensed under the **MIT License** — See [LICENSE](LICENSE) file for details.
+
+You are free to:
+- ✅ Use this software for any purpose
+- ✅ Copy, modify, and distribute it
+- ✅ Use it commercially or privately
+
+Just keep the license and copyright notice included.
 
 ---
 
-## 💬 Support
+## 🤝 Contributing
 
-If you have issues:
-1. Check the **Troubleshooting** section above
-2. Review your console output for error messages
-3. Make sure all prerequisites are installed
-4. Verify your Discord Webhook is configured correctly
+Contributions are welcome! To contribute:
+
+1. **Fork** the repository
+2. **Create** a feature branch: `git checkout -b feature/amazing-feature`
+3. **Commit** your changes: `git commit -m 'Add amazing feature'`
+4. **Push** to the branch: `git push origin feature/amazing-feature`
+5. **Open** a Pull Request
+
+### Areas to Contribute
+- 🐛 Bug fixes and improvements
+- 📝 Documentation enhancements
+- 🎨 UI/UX improvements (especially for future GUI)
+- 🧪 Unit tests
+- 🔧 Feature development
+
+---
+
+## 💬 Support & Community
+
+- 📖 **Documentation** — Check [README.md](README.md) and [CHANGELOG.md](CHANGELOG.md)
+- 🐛 **Report Bugs** — [Open an Issue](https://github.com/lol8908-rgb/Roblox-Sentinel.very-new/issues)
+- 💡 **Request Features** — [Create a Discussion](https://github.com/lol8908-rgb/Roblox-Sentinel.very-new/discussions)
+- 🤔 **Ask Questions** — [GitHub Discussions](https://github.com/lol8908-rgb/Roblox-Sentinel.very-new/discussions)
+
+---
+
+## 🙏 Credits
+
+- Built for the **Roblox community**
+- Uses **Discord Webhooks API**
+- Powered by **Python** and **requests**
+- Inspired by log monitoring best practices
 
 ---
 
 **Made with ❤️ for the Roblox community**
+
+### Star this repo if you find it useful! ⭐

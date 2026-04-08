@@ -54,7 +54,7 @@ def send_to_discord(message):
     Returns:
         bool: True if successful, False otherwise
     """
-    if DISCORD_WEBHOOK_URL == "YOUR_WEBHOOK_HERE":
+    if DISCORD_WEBHOOK_URL == "https://discord.com/api/webhooks/1491379920998240257/tWcQQZcnEpTKlx0qBD5J4YQyJ_81WoenxQszBrWh9ROnfaUd5A454bDoHTB98ZAt_FKi":
         return False
     
     payload = {"content": f"🛡️ **Chat:** {message}"}
